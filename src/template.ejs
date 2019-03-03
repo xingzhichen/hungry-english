@@ -9,14 +9,14 @@
 </head>
 
 <body>
-  <% for(let a=0;title<data.length;a++){ %>
+  <% for(let a=0;a<data.length;a++){ %>
   <div class="content-items">
     <h2><%= data[a].name %></h2>
-    <% for(let b=0;title<data[a].tags.length;b++){ %>
-    <h3><%= data[a].tags[b].name %></h3>
-    <% for(let c=0;title<data[a].tags[b].items.length;c++){ %>
+    <% for(let b=0;b<data[a].tags.length;b++){ %>
+    <h3><%= data[a].tags[b].classify %></h3>
+    <% for(let c=0;c<data[a].tags[b].items.length;c++){ %>
     <h4><%= data[a].tags[b].items[c].name %></h4>
-    <p><%= data[a].tags[b].items[c].content %></p>
+    <p><%- data[a].tags[b].items[c].content %></p>
     <% } %>
     <% } %>
   </div>
