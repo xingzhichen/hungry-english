@@ -1,0 +1,13 @@
+{
+  "name": "hungry-english",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/xingzhichen/hungry-english.git",
+  "author": "xingzhichen <x2822074239@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "ejs": "^2.6.1"
+  }
+}
